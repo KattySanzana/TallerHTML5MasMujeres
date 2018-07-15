@@ -1,41 +1,54 @@
-html{
-  height:100%;
+html {
+  height: 100%;
 }
-html, body {
+html,
+body {
   min-height: 100% !important;
   height: auto !important;
 }
-body{
+body {
   display: block;
-  height:100%;
+  height: 100%;
   position: relative;
   margin: 0px;
- font-family: 'Open Sans', sans-serif;  /* aquí elegimos la tipografía que desplegaremos en el sitio */
+  font-family: "Open Sans", sans-serif; /* aquí elegimos la tipografía que desplegaremos en el sitio */
   overflow-y: unset; /* esto es para que no haya scroll horizontal */
-
 }
 
 .jumbo-taller {
-  background: url("../Img/logo-black.png"); 
-  background-size: 100%;  /* Esto hace la imágen responsiva */
-  background-repeat: no-repeat;   /* Esto hace  que la imágen no se repita*/ 
+  background: url("../Img/logo-black.png");
+  background-size: 100%; /* Esto hace la imágen responsiva */
+  background-repeat: no-repeat; /* Esto hace  que la imágen no se repita*/
   height: 500px;
   width: 100%;
 }
+@media (max-width: 576px) {
+  .jumbo-taller {
+    background: unset;
+  }
+}
+
+.mycollapse {
+  background: black;
+}
+@media (max-width: 576px) {
+  .mycollapse {
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  }
+}
+
+/* ul.navbar-nav li.nav-item a.nav-link{
+  color: white !important;
+} */
 
 #myNavbar {
-  /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
-  color: white;
-  opacity: 0.95;
   height: 70px;
   background-color: black;
 }
 
-.nav > a {
-  color: white;
-  font-size: large;
+.nav-link:hover {
+  background-color: black;
 }
-
 .jumbo-text {
   /* opacity: 1; */
   background-color: rgba(255, 255, 255, 0.1);
@@ -67,8 +80,8 @@ body{
 
 section {
   height: 100%;
-   padding: 80px 0;
-        /* width: 100%; */
+  padding: 80px 0;
+  /* width: 100%; */
 }
 
 #section1 {
@@ -115,12 +128,11 @@ ul > li {
   -webkit-background-clip: text;
   font-size: 4rem;
 }
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
   .display-2 {
     font-size: 2rem;
   }
- }
-
+}
 
 /* @include media-breakpoint-up(sm) {
   html {
@@ -139,7 +151,6 @@ ul > li {
     font-size: 1.6rem;
   }
 } */
-
 
 .social > a {
   color: white;
@@ -187,32 +198,31 @@ a > i.fab {
   background-color: #5d33fb;
 }
 .thumbnail {
-    position:relative;
-    overflow:hidden;
+  position: relative;
+  overflow: hidden;
 }
 .caption2 {
-    position:absolute;
-    top:0;
-    right:0;
-    background:rgba(66, 139, 202, 0.75);
-    width:100%;
-    height:100%;
-    padding:2%;
-    /* display: none; */
-    text-align:center;
-    color:#fff !important;
-    z-index:2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(66, 139, 202, 0.75);
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  /* display: none; */
+  text-align: center;
+  color: #fff !important;
+  z-index: 2;
 }
 
-.formulario{
+.formulario {
   /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
-  color:black;
+  color: black;
   height: 200px;
 }
-.myfooter{
+.myfooter {
   padding: 20px;
   text-align: center;
-  
 }
 .foot {
   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
@@ -222,10 +232,8 @@ a > i.fab {
   margin-right: -15px;
   margin-bottom: -10px;
   padding: 10px;
-  
 }
-.myheader{
+.myheader {
   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
   color: white;
-
 }
